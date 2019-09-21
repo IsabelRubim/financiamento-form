@@ -1,0 +1,106 @@
+.container {
+    max-width: 120rem;
+    margin: 12rem auto;
+    background-image: var(--color-gradient-dark);
+    box-shadow: var(--shadow-dark);
+    overflow: hidden;
+    border-radius: 1.2rem;
+
+    min-height: 65rem;
+    display: flex;
+
+    @media only screen and (max-width: $bp-largest) {
+        flex-direction: column;
+        border-radius: 0;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+.header {
+    height: 85vh;
+    background-color: var(--color-background-light); 
+    position: relative;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 1.2rem;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 75vh, 0 164%);
+        height: 95vh;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 6.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__illustration-box {
+        position: absolute;
+        top: 53%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+
+        @media only screen and (max-width: $bp-largest) {
+            top: 62%;
+        }
+    }
+
+    &__illustration {
+        opacity: .3;
+        height: 81rem;
+        z-index: -1;
+    }
+   
+}
+
+.detail {
+    align-self: center;
+    flex-basis: 50%;
+
+    @media only screen and (max-width: $bp-largest) {
+        flex: 1;
+        padding: 2rem;
+    }
+}
+
+.content {
+    flex: 1;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    background-color: var(--color-background-light);
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+    height: 30rem;
+    width: 50rem;   
+}

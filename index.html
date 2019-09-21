@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Financiamento Imobiliário</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__illustration-box">
+            <img src="img/best-place.svg" alt="Illustration 1" class="header__illustration">
+        </div>
+
+        <div class="header__logo-box">
+            <img src="img/logo.png" alt="Logo" class="header__logo">
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Financiamento descomplicado</span>
+                <span class="heading-primary--sub">Seu financiamento com imóvel em garantia.</span>
+
+                <a href="#section-form" class="btn btn--white btn--animated">Simule Agora</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="container" id="section-form">
+        <section class="content">
+            <form class="add">
+                <h1 class="heading-primary--form">Sua simulação em um clique!</h1>
+
+                <div class="add__container">
+                    <svg class="add__icon">
+                        <use xlink:href="img/sprite.svg#icon-coin-dollar"></use>
+                    </svg>
+                    <label class="add__input">
+                        <h2 class="add__title">
+                            Valor do financiamento imobiliário
+                            <span class="add__title--error">*</span>
+                        </h2>
+                        <input type="text" name="valorFinanciamento" class="add__value" placeholder="R$ 100.000.000">
+                    </label>
+                </div>
+
+                <div class="add__container">
+                    <svg class="add__icon">
+                        <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg>
+                    <label class="add__input">
+                        <h2 class="add__title">
+                            Valor do imóvel
+                            <span class="add__title--error">*</span>
+                        </h2>
+                        <input type="text" name="valorImovel" class="add__value" placeholder="R$ 250.000.000">
+                    </label>
+                </div>
+
+                <div class="add__container">
+                    <svg class="add__icon">
+                        <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    <label class="add__input">
+                        <h2 class="add__title">
+                            Prazo
+                            <span class="add__title--error">*</span>
+                        </h2>
+                        <input type="text" name="valorPrazo" class="add__value" placeholder="meses">
+                    </label>
+                </div>
+
+                <button class="btn btn--blue btn-form">Simule agora &rarr;</button>
+            </form>
+        </section>
+
+        <section class="detail">
+        <!--<div class="review">
+                <div class="review-table">
+                    <div class="review-table__rating">
+                        <h1 class="review-table__title">Valor da primeira parcela</h1>
+                        <p class="review-table__amount">R$ 12.000,00</p>
+                    </div>
+                    <fieldset class="review-table__rating">
+                        <legend class="review-table__title">Taxa de juros</legend>
+                        <p class="review-table__amount">R$ 1.000,00</p>
+                    </fieldset>
+                    <fieldset class="review-table__rating">
+                        <legend class="review-table__title">Meses</legend>
+                        <p class="review-table__amount">12 meses</p>
+                    </fieldset>
+                </div>
+            </div>-->
+            <img src="img/illustration-main.svg" alt="Illustration 2" class="illustration">
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

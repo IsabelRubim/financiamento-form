@@ -1,0 +1,44 @@
+.illustration {
+    height: 25rem;
+    width: 25rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    animation: moveInTop 1s ease-out;
+}
+
+.review-table {
+    height: 8rem;
+    padding: 1.2rem;    
+
+    &__rating {
+        text-align: center;
+        border-bottom: 1px solid var(--color-primary);
+        transition: all .2s;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &:not(:first-child) {
+            border: 1px solid var(--color-primary);
+            border-radius: 1.2rem;
+        }        
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: var(--color-accent);
+    }
+
+    &__amount {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+    }
+}
